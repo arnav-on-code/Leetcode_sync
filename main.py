@@ -147,25 +147,8 @@ def main():
 
     git = GitManager(Config.BASE_DIR)
 
-    console.print("\n[bold cyan]Git Status Before[/bold cyan]")
     console.print(git.status())
 
-    git.add()
-
-    console.print("\n[bold green]Files staged successfully.[/bold green]")
-
-    console.print("\n[bold cyan]Git Status After[/bold cyan]")
-    console.print(git.status())
-
-    git.commit(
-        "test: verify automatic git commit"
-    )
-
-    console.print("[green]Commit successful![/green]")
-    git.push()
-
-    console.print("[green]Push successful![/green]")
-
-
+    
 if __name__ == "__main__":
     main()
