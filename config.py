@@ -6,8 +6,8 @@ load_dotenv()
 
 class Config:
 
-    Leetcode_session = os.getenv("LEETCODE_SESSION", "")
-    CSRF_token = os.getenv("CSRF_TOKEN", "")
+    LEETCODE_SESSION = os.getenv("LEETCODE_SESSION", "")
+    CSRF_TOKEN = os.getenv("CSRF_TOKEN", "")
 
     GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "")
     GITHUB_EMAIL = os.getenv("GITHUB_EMAIL", "")
