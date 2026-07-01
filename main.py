@@ -10,6 +10,8 @@ from leetcode.client import LeetCodeClient
 from leetcode.api import LeetCodeAPI
 from config.settings import Config
 
+from leetcode.downloader import SubmissionDownloader
+
 
 console = Console()
 
@@ -133,5 +135,14 @@ def main():
     20: "Compile Error",
 }
     console.print(f"Status      : {STATUS_MAP.get(detail.status_code, 'Unknown')}")
+
+    detail = api.get_submission_detail(submissions[0].id)
+
+    downloader = SubmissionDownloader()
+
+    folder = downloader.create_problem_directory(detail)
+
+    console.print(f"\n[green]Directory created:[/green] {folder}")
+
 if __name__ == "__main__":
     main()
