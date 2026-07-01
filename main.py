@@ -140,10 +140,10 @@ def main():
 
     downloader = SubmissionDownloader()
 
-    solution_path = downloader.save_solution(detail)
-
+    folder = downloader.download(detail)
+    
     console.print(
-        f"\n[bold green]Solution saved:[/bold green]\n{solution_path}"
+        f"\n[bold green]Solution saved:[/bold green]\n{folder}"
     )
 
 if __name__ == "__main__":

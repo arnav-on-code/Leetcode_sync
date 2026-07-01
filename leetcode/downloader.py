@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 from config.settings import Config
@@ -8,38 +9,34 @@ class SubmissionDownloader:
     Handles downloading and storing LeetCode submissions locally.
     """
 
+    LANGUAGE_FILES = {
+        "python3": "solution.py",
+        "python": "solution.py",
+        "java": "Solution.java",
+        "cpp": "solution.cpp",
+        "c": "solution.c",
+        "javascript": "solution.js",
+        "typescript": "solution.ts",
+        "go": "solution.go",
+        "rust": "solution.rs",
+        "kotlin": "Solution.kt",
+        "swift": "solution.swift",
+        "csharp": "Solution.cs",
+    }
+
     def __init__(self):
         self.solutions_dir = Config.STORAGE_DIR / "solutions"
+        self.solutions_dir.mkdir(parents=True, exist_ok=True)
 
-        # Create storage/solutions if it doesn't exist
-        self.solutions_dir.mkdir(
-            parents=True,
-            exist_ok=True,
+    @classmethod
+    def get_solution_filename(cls, language: str) -> str:
+        return cls.LANGUAGE_FILES.get(
+            language.lower(),
+            "solution.txt",
         )
 
     @staticmethod
-    def get_solution_filename(language: str) -> str:
-        mapping = {
-            "python3": "solution.py",
-            "java": "Solution.java",
-            "cpp": "solution.cpp",
-            "c": "solution.c",
-            "javascript": "solution.js",
-        }
-
-        return mapping.get(language, "solution.txt")
-        
-    @staticmethod
     def _format_folder_name(question_id: str, slug: str) -> str:
-        """
-        Convert:
-            295
-            find-median-from-data-stream
-
-        Into:
-            0295_Find_Median_from_Data_Stream
-        """
-
         problem_number = str(question_id).zfill(4)
 
         title = "_".join(
@@ -50,10 +47,6 @@ class SubmissionDownloader:
         return f"{problem_number}_{title}"
 
     def create_problem_directory(self, detail) -> Path:
-        """
-        Create the directory for a problem if it doesn't already exist.
-        """
-
         folder_name = self._format_folder_name(
             detail.question_id,
             detail.title_slug,
@@ -67,16 +60,13 @@ class SubmissionDownloader:
         )
 
         return problem_dir
-    
 
     def save_solution(self, detail) -> Path:
-        """
-        Save the source code into the appropriate solution file.
-        """
-
-        filename = self.get_solution_filename(detail.language)
-
         problem_dir = self.create_problem_directory(detail)
+
+        filename = self.get_solution_filename(
+            detail.language
+        )
 
         solution_file = problem_dir / filename
 
@@ -86,3 +76,46 @@ class SubmissionDownloader:
         )
 
         return solution_file
+
+    def save_metadata(self, detail) -> Path:
+        problem_dir = self.create_problem_directory(detail)
+
+        metadata = {
+            "submission_id": detail.submission_id,
+            "question_id": detail.question_id,
+            "title_slug": detail.title_slug,
+            "language": detail.language,
+            "language_verbose": detail.language_verbose,
+            "runtime": detail.runtime_display,
+            "memory": detail.memory_display,
+            "status_code": detail.status_code,
+            "timestamp": detail.timestamp,
+        }
+
+        metadata_file = problem_dir / "metadata.json"
+
+        metadata_file.write_text(
+            json.dumps(metadata, indent=4),
+            encoding="utf-8",
+        )
+
+        return metadata_file
+
+    def download(self, detail) -> Path:
+        """
+        Complete download pipeline.
+
+        Creates directory,
+        saves solution,
+        saves metadata.
+
+        Returns problem directory.
+        """
+
+        problem_dir = self.create_problem_directory(detail)
+
+        self.save_solution(detail)
+
+        self.save_metadata(detail)
+
+        return problem_dir
