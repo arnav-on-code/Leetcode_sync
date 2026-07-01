@@ -7,13 +7,7 @@ def test_get_profile():
 
     client = MagicMock()
 
-    client.post.return_value = {
-        "data": {
-            "matchedUser": {
-                "username": "arnav-on-code"
-            }
-        }
-    }
+    client.post.return_value = {"data": {"matchedUser": {"username": "arnav-on-code"}}}
 
     api = LeetCodeAPI(client)
 

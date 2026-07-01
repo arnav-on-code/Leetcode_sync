@@ -1,7 +1,4 @@
-from leetcode.parser import (
-    parse_submissions,
-    parse_submission_detail,
-)
+from leetcode.parser import parse_submission_detail, parse_submissions
 
 
 def test_parse_submissions():

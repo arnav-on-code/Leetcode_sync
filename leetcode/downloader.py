@@ -5,7 +5,6 @@ from config.settings import Config
 
 
 class SubmissionDownloader:
-    
 
     LANGUAGE_FILES = {
         "python3": "solution.py",
@@ -37,10 +36,7 @@ class SubmissionDownloader:
     def _format_folder_name(question_id: str, slug: str) -> str:
         problem_number = str(question_id).zfill(4)
 
-        title = "_".join(
-            word.capitalize()
-            for word in slug.split("-")
-        )
+        title = "_".join(word.capitalize() for word in slug.split("-"))
 
         return f"{problem_number}_{title}"
 
@@ -56,7 +52,7 @@ class SubmissionDownloader:
         return problem_dir
 
     def save_solution(self, problem_dir: Path, detail) -> Path:
-        
+
         filename = self.get_solution_filename(detail.language)
 
         solution_file = problem_dir / filename
@@ -68,9 +64,7 @@ class SubmissionDownloader:
 
         return solution_file
 
-
     def save_metadata(self, problem_dir: Path, detail) -> Path:
-        
 
         metadata = {
             "submission_id": detail.submission_id,
@@ -94,7 +88,6 @@ class SubmissionDownloader:
         return metadata_file
 
     def download(self, detail) -> Path:
-      
 
         problem_dir = self.create_problem_directory(detail)
 

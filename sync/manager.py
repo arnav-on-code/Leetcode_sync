@@ -1,14 +1,11 @@
 from config.settings import Config
-
-from leetcode.auth import LeetCodeAuth
-from leetcode.client import LeetCodeClient
-from leetcode.api import LeetCodeAPI
-from leetcode.downloader import SubmissionDownloader
-
-from sync.detector import SubmissionDetector
-
 from github_sync.manager import GitManager
 from github_sync.messages import generate_commit_message
+from leetcode.api import LeetCodeAPI
+from leetcode.auth import LeetCodeAuth
+from leetcode.client import LeetCodeClient
+from leetcode.downloader import SubmissionDownloader
+from sync.detector import SubmissionDetector
 
 
 class SyncManager:
@@ -19,9 +16,7 @@ class SyncManager:
     def __init__(self):
         session = LeetCodeAuth().get_session()
 
-        self.api = LeetCodeAPI(
-            LeetCodeClient(session)
-        )
+        self.api = LeetCodeAPI(LeetCodeClient(session))
 
         self.detector = SubmissionDetector()
 
@@ -49,22 +44,15 @@ class SyncManager:
         for submission in new_submissions:
             try:
                 # Fetch complete submission details
-                detail = self.api.get_submission_detail(
-                    submission.id
-                )
+                detail = self.api.get_submission_detail(submission.id)
 
                 # Download solution and metadata
                 self.downloader.download(detail)
 
-                
                 self.git.add()
 
-                
-                self.git.commit(
-                    generate_commit_message(detail)
-                )
+                self.git.commit(generate_commit_message(detail))
 
-                
                 self.git.push()
 
                 self.detector.update(submission)

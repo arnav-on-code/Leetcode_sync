@@ -1,7 +1,5 @@
 from config.settings import Config
-
 from sync.manager import SyncManager
-
 from utils.formatter import display_banner
 
 

@@ -28,9 +28,7 @@ def display_profile(username: str) -> None:
     Display logged-in user.
     """
 
-    console.print(
-        f"[bold green]Logged in as:[/bold green] {username}\n"
-    )
+    console.print(f"[bold green]Logged in as:[/bold green] {username}\n")
 
 
 def display_statistics(stats: Iterable[dict]) -> None:
@@ -129,9 +127,7 @@ def display_new_submissions(new_submissions) -> None:
     """
 
     if not new_submissions:
-        console.print(
-            "\n[bold blue]No new submissions found.[/bold blue]\n"
-        )
+        console.print("\n[bold blue]No new submissions found.[/bold blue]\n")
         return
 
     console.print(
@@ -139,9 +135,7 @@ def display_new_submissions(new_submissions) -> None:
     )
 
     for submission in new_submissions:
-        console.print(
-            f"• {submission.title}"
-        )
+        console.print(f"• {submission.title}")
 
 
 def display_download(path) -> None:
@@ -149,9 +143,7 @@ def display_download(path) -> None:
     Display downloaded solution path.
     """
 
-    console.print(
-        f"\n[bold green]Solution saved:[/bold green]\n{path}"
-    )
+    console.print(f"\n[bold green]Solution saved:[/bold green]\n{path}")
 
 
 def display_sync_success(title: str) -> None:
@@ -159,9 +151,7 @@ def display_sync_success(title: str) -> None:
     Display synchronization success.
     """
 
-    console.print(
-        f"\n[bold green]Successfully synced:[/bold green] {title}"
-    )
+    console.print(f"\n[bold green]Successfully synced:[/bold green] {title}")
 
 
 def display_error(message: str) -> None:
@@ -169,6 +159,4 @@ def display_error(message: str) -> None:
     Display an error message.
     """
 
-    console.print(
-        f"\n[bold red]Error:[/bold red] {message}"
-    )
+    console.print(f"\n[bold red]Error:[/bold red] {message}")

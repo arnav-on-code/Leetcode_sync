@@ -12,9 +12,7 @@ def test_create_problem_directory(
 
     downloader.solutions_dir = tmp_path
 
-    folder = downloader.create_problem_directory(
-        sample_submission_detail
-    )
+    folder = downloader.create_problem_directory(sample_submission_detail)
 
     assert folder.exists()
 
@@ -30,9 +28,7 @@ def test_save_solution(
 
     downloader.solutions_dir = tmp_path
 
-    folder = downloader.create_problem_directory(
-        sample_submission_detail
-    )
+    folder = downloader.create_problem_directory(sample_submission_detail)
 
     solution = downloader.save_solution(
         folder,
@@ -43,10 +39,7 @@ def test_save_solution(
 
     assert solution.name == "solution.py"
 
-    assert (
-        solution.read_text(encoding="utf-8")
-        == sample_submission_detail.code
-    )
+    assert solution.read_text(encoding="utf-8") == sample_submission_detail.code
 
 
 def test_save_metadata(
@@ -58,9 +51,7 @@ def test_save_metadata(
 
     downloader.solutions_dir = tmp_path
 
-    folder = downloader.create_problem_directory(
-        sample_submission_detail
-    )
+    folder = downloader.create_problem_directory(sample_submission_detail)
 
     metadata = downloader.save_metadata(
         folder,
@@ -69,11 +60,7 @@ def test_save_metadata(
 
     assert metadata.exists()
 
-    data = json.loads(
-        metadata.read_text(
-            encoding="utf-8"
-        )
-    )
+    data = json.loads(metadata.read_text(encoding="utf-8"))
 
     assert data["question_id"] == "295"
 
@@ -91,16 +78,10 @@ def test_download(
 
     downloader.solutions_dir = tmp_path
 
-    folder = downloader.download(
-        sample_submission_detail
-    )
+    folder = downloader.download(sample_submission_detail)
 
     assert folder.exists()
 
-    assert (
-        folder / "solution.py"
-    ).exists()
+    assert (folder / "solution.py").exists()
 
-    assert (
-        folder / "metadata.json"
-    ).exists()
+    assert (folder / "metadata.json").exists()

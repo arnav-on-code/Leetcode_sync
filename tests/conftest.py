@@ -1,9 +1,7 @@
-from datetime import datetime
 
 import pytest
 
-from leetcode.models import Submission
-from leetcode.models import SubmissionDetail
+from leetcode.models import Submission, SubmissionDetail
 
 
 @pytest.fixture
@@ -27,23 +25,14 @@ def sample_submission_detail():
         submission_id="2051842379",
         question_id="295",
         title_slug="find-median-from-data-stream",
-
         language="python3",
         language_verbose="Python3",
-
         runtime=177,
         runtime_display="177 ms",
-
         memory=41264000,
         memory_display="41.3 MB",
-
         status_code=10,
-
-        code=(
-            "class MedianFinder:\n"
-            "    pass\n"
-        ),
-
+        code=("class MedianFinder:\n" "    pass\n"),
         timestamp=1782879665,
     )
 

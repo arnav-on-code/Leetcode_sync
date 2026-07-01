@@ -43,4 +43,4 @@ jobs:
 
           isort --check-only .
 
-          flake8 .
+          flake8

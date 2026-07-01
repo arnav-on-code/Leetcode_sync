@@ -1,6 +1,6 @@
-from pathlib import Path
 import shutil
 import subprocess
+from pathlib import Path
 
 
 class GitManager:
@@ -10,9 +10,7 @@ class GitManager:
 
     def __init__(self, repository: Path):
         if shutil.which("git") is None:
-            raise RuntimeError(
-                "Git is not installed or not available in PATH."
-            )
+            raise RuntimeError("Git is not installed or not available in PATH.")
 
         self.repository = Path(repository).resolve()
 

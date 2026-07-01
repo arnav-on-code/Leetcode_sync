@@ -24,22 +24,15 @@ def parse_submission_detail(submission_id, data):
 
     return SubmissionDetail(
         submission_id=str(submission_id),
-
         question_id=data["question"]["questionId"],
         title_slug=data["question"]["titleSlug"],
-
         language=data["lang"]["name"],
         language_verbose=data["lang"]["verboseName"],
-
         runtime=data["runtime"],
         runtime_display=data["runtimeDisplay"],
-
         memory=data["memory"],
         memory_display=data["memoryDisplay"],
-
         status_code=data["statusCode"],
-
         code=data["code"],
-
         timestamp=int(data["timestamp"]),
     )

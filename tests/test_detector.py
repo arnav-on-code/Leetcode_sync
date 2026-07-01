@@ -1,16 +1,14 @@
 from unittest.mock import patch
 
-from sync.detector import SubmissionDetector
 from leetcode.models import Submission
+from sync.detector import SubmissionDetector
 
 
 def test_find_new_first_run():
 
     detector = SubmissionDetector()
 
-    detector.state = {
-        "last_submission_id": None
-    }
+    detector.state = {"last_submission_id": None}
 
     submissions = [
         Submission(
@@ -45,18 +43,14 @@ def test_update_state(mock_save, sample_submission):
 
     detector.update(sample_submission)
 
-    mock_save.assert_called_once_with(
-        sample_submission.id
-    )
+    mock_save.assert_called_once_with(sample_submission.id)
 
 
 def test_find_new_after_update(sample_submission):
 
     detector = SubmissionDetector()
 
-    detector.state = {
-        "last_submission_id": sample_submission.id
-    }
+    detector.state = {"last_submission_id": sample_submission.id}
 
     submissions = [
         sample_submission,

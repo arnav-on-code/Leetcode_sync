@@ -1,9 +1,7 @@
 from unittest.mock import MagicMock, patch
 
+from leetcode.models import Submission, SubmissionDetail
 from sync.manager import SyncManager
-
-from leetcode.models import Submission
-from leetcode.models import SubmissionDetail
 
 
 @patch("sync.manager.GitManager")
@@ -45,17 +43,11 @@ def test_sync_manager_run(
         timestamp=1780000000,
     )
 
-    manager.api.get_recent_submissions = MagicMock(
-        return_value=[submission]
-    )
+    manager.api.get_recent_submissions = MagicMock(return_value=[submission])
 
-    manager.detector.find_new = MagicMock(
-        return_value=[submission]
-    )
+    manager.detector.find_new = MagicMock(return_value=[submission])
 
-    manager.api.get_submission_detail = MagicMock(
-        return_value=detail
-    )
+    manager.api.get_submission_detail = MagicMock(return_value=detail)
 
     manager.downloader.download = MagicMock()
 
@@ -103,13 +95,9 @@ def test_sync_manager_no_new_submissions(
 
     manager = SyncManager()
 
-    manager.api.get_recent_submissions = MagicMock(
-        return_value=[]
-    )
+    manager.api.get_recent_submissions = MagicMock(return_value=[])
 
-    manager.detector.find_new = MagicMock(
-        return_value=[]
-    )
+    manager.detector.find_new = MagicMock(return_value=[])
 
     manager.run()
 

@@ -1,5 +1,5 @@
-from pathlib import Path
 import os
+from pathlib import Path
 
 from dotenv import load_dotenv
 
@@ -52,5 +52,3 @@ class Config:
         for variable in required:
             if not getattr(cls, variable):
                 raise ValueError(f"Missing environment variable: {variable}")
-            
-
