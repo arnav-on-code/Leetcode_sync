@@ -2,9 +2,14 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
+from sync.detector import SubmissionDetector
+
+
 from leetcode.auth import LeetCodeAuth
 from leetcode.client import LeetCodeClient
 from leetcode.api import LeetCodeAPI
+from config.settings import Config
+
 
 console = Console()
 
@@ -56,13 +61,15 @@ def display_recent_submissions(submissions):
 
 
 def main():
+    Config.validate()
+    Config.initialize()
+
     banner()
 
-    auth = LeetCodeAuth()
-    session = auth.get_session()
-
-    client = LeetCodeClient(session)
-    api = LeetCodeAPI(client)
+    session = LeetCodeAuth().get_session()
+    api = LeetCodeAPI(
+        LeetCodeClient(session)
+    )
 
     # Profile
     profile = api.get_profile()
@@ -80,7 +87,27 @@ def main():
     # Recent submissions
     submissions = api.get_recent_submissions()
 
+
+    detector = SubmissionDetector()
+
+    new_submissions = detector.find_new(submissions)
+
+    if new_submissions:
+        console.print(
+            f"\n[bold green]Found {len(new_submissions)} new submission(s).[/bold green]\n"
+        )
+    else:
+        console.print(
+            "\n[bold blue]No new submissions found.[/bold blue]\n"
+        )
+
+    for submission in new_submissions:
+        console.print(f"• {submission.title}")
+
     display_recent_submissions(submissions)
+
+    if new_submissions:
+        detector.update(new_submissions[0])
 
 
 if __name__ == "__main__":
