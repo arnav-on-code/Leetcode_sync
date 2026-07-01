@@ -162,7 +162,9 @@ def main():
     )
 
     console.print("[green]Commit successful![/green]")
+    git.push()
 
+    console.print("[green]Push successful![/green]")
 
 
 if __name__ == "__main__":
