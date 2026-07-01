@@ -10,7 +10,7 @@ from leetcode.client import LeetCodeClient
 from leetcode.api import LeetCodeAPI
 from config.settings import Config
 
-from leetcode.downloader import SubmissionDownloader
+from leetcode.downloader import SubmissionDownloader 
 
 
 console = Console()
@@ -140,9 +140,11 @@ def main():
 
     downloader = SubmissionDownloader()
 
-    folder = downloader.create_problem_directory(detail)
+    solution_path = downloader.save_solution(detail)
 
-    console.print(f"\n[green]Directory created:[/green] {folder}")
+    console.print(
+        f"\n[bold green]Solution saved:[/bold green]\n{solution_path}"
+    )
 
 if __name__ == "__main__":
     main()

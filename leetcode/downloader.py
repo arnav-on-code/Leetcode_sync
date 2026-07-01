@@ -18,6 +18,18 @@ class SubmissionDownloader:
         )
 
     @staticmethod
+    def get_solution_filename(language: str) -> str:
+        mapping = {
+            "python3": "solution.py",
+            "java": "Solution.java",
+            "cpp": "solution.cpp",
+            "c": "solution.c",
+            "javascript": "solution.js",
+        }
+
+        return mapping.get(language, "solution.txt")
+        
+    @staticmethod
     def _format_folder_name(question_id: str, slug: str) -> str:
         """
         Convert:
@@ -55,3 +67,22 @@ class SubmissionDownloader:
         )
 
         return problem_dir
+    
+
+    def save_solution(self, detail) -> Path:
+        """
+        Save the source code into the appropriate solution file.
+        """
+
+        filename = self.get_solution_filename(detail.language)
+
+        problem_dir = self.create_problem_directory(detail)
+
+        solution_file = problem_dir / filename
+
+        solution_file.write_text(
+            detail.code,
+            encoding="utf-8",
+        )
+
+        return solution_file
