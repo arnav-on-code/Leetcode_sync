@@ -5,9 +5,7 @@ from config.settings import Config
 
 
 class SubmissionDownloader:
-    """
-    Handles downloading and storing LeetCode submissions locally.
-    """
+    
 
     LANGUAGE_FILES = {
         "python3": "solution.py",
@@ -53,20 +51,13 @@ class SubmissionDownloader:
         )
 
         problem_dir = self.solutions_dir / folder_name
-
-        problem_dir.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
+        problem_dir.mkdir(parents=True, exist_ok=True)
 
         return problem_dir
 
-    def save_solution(self, detail) -> Path:
-        problem_dir = self.create_problem_directory(detail)
-
-        filename = self.get_solution_filename(
-            detail.language
-        )
+    def save_solution(self, problem_dir: Path, detail) -> Path:
+        
+        filename = self.get_solution_filename(detail.language)
 
         solution_file = problem_dir / filename
 
@@ -77,8 +68,9 @@ class SubmissionDownloader:
 
         return solution_file
 
-    def save_metadata(self, detail) -> Path:
-        problem_dir = self.create_problem_directory(detail)
+
+    def save_metadata(self, problem_dir: Path, detail) -> Path:
+        
 
         metadata = {
             "submission_id": detail.submission_id,
@@ -102,20 +94,12 @@ class SubmissionDownloader:
         return metadata_file
 
     def download(self, detail) -> Path:
-        """
-        Complete download pipeline.
-
-        Creates directory,
-        saves solution,
-        saves metadata.
-
-        Returns problem directory.
-        """
+      
 
         problem_dir = self.create_problem_directory(detail)
 
-        self.save_solution(detail)
+        self.save_solution(problem_dir, detail)
 
-        self.save_metadata(detail)
+        self.save_metadata(problem_dir, detail)
 
         return problem_dir
