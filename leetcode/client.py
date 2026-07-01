@@ -17,10 +17,13 @@ class LeetCodeClient:
             json=payload,
             timeout=Config.REQUEST_TIMEOUT
         )
+        if Config.DEBUG:
 
-        print("=" * 80)
-        print("Status Code:", response.status_code)
-        print(response.text)
-        print("=" * 80)
+            print("=" * 80)
+            print("Status Code:", response.status_code)
+            print(response.text)
+            print("=" * 80)
+
+        
 
         return response.json()

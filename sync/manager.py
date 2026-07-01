@@ -34,28 +34,45 @@ class SyncManager:
         Run one synchronization cycle.
         """
 
+        # Fetch recent accepted submissions
         submissions = self.api.get_recent_submissions()
 
+        # Detect which ones haven't been synced yet
         new_submissions = self.detector.find_new(submissions)
 
         if not new_submissions:
             print("No new submissions found.")
             return
 
-        latest = new_submissions[0]
+        print(f"Found {len(new_submissions)} new submission(s).\n")
 
-        detail = self.api.get_submission_detail(latest.id)
+        for submission in new_submissions:
+            try:
+                # Fetch complete submission details
+                detail = self.api.get_submission_detail(
+                    submission.id
+                )
 
-        self.downloader.download(detail)
+                # Download solution and metadata
+                self.downloader.download(detail)
 
-        self.git.add()
+                
+                self.git.add()
 
-        self.git.commit(
-            generate_commit_message(detail)
-        )
+                
+                self.git.commit(
+                    generate_commit_message(detail)
+                )
 
-        self.git.push()
+                
+                self.git.push()
 
-        self.detector.update(latest)
+                self.detector.update(submission)
 
-        print(f"Successfully synced: {latest.title}")
+                print(f"✓ Synced: {submission.title}")
+
+            except Exception as e:
+                print(f"✗ Failed: {submission.title}")
+                print(e)
+
+        print("\nSynchronization complete.")

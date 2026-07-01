@@ -20,6 +20,8 @@ class Config:
     GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "")
     GITHUB_EMAIL = os.getenv("GITHUB_EMAIL", "")
 
+    DEBUG = False
+
     STORAGE_DIR = BASE_DIR / os.getenv("STORAGE_DIR", "storage")
     LOGS_DIR = BASE_DIR / os.getenv("LOGS_DIR", "logs")
 
