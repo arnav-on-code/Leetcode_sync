@@ -4,14 +4,15 @@ from rich.table import Table
 
 from sync.detector import SubmissionDetector
 
-
 from leetcode.auth import LeetCodeAuth
 from leetcode.client import LeetCodeClient
 from leetcode.api import LeetCodeAPI
+
 from config.settings import Config
 
 from leetcode.downloader import SubmissionDownloader 
 
+from github_sync.manager import GitManager
 
 console = Console()
 
@@ -136,8 +137,6 @@ def main():
 }
     console.print(f"Status      : {STATUS_MAP.get(detail.status_code, 'Unknown')}")
 
-    detail = api.get_submission_detail(submissions[0].id)
-
     downloader = SubmissionDownloader()
 
     folder = downloader.download(detail)
@@ -145,6 +144,26 @@ def main():
     console.print(
         f"\n[bold green]Solution saved:[/bold green]\n{folder}"
     )
+
+    git = GitManager(Config.BASE_DIR)
+
+    console.print("\n[bold cyan]Git Status Before[/bold cyan]")
+    console.print(git.status())
+
+    git.add()
+
+    console.print("\n[bold green]Files staged successfully.[/bold green]")
+
+    console.print("\n[bold cyan]Git Status After[/bold cyan]")
+    console.print(git.status())
+
+    git.commit(
+        "test: verify automatic git commit"
+    )
+
+    console.print("[green]Commit successful![/green]")
+
+
 
 if __name__ == "__main__":
     main()
