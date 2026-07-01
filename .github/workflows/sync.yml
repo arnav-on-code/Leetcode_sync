@@ -31,15 +31,15 @@ jobs:
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
           CSRF_TOKEN: ${{ secrets.CSRF_TOKEN }}
           LEETCODE_USERNAME: ${{ secrets.LEETCODE_USERNAME }}
-          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-          GITHUB_EMAIL: ${{ secrets.GITHUB_EMAIL }}
+          GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
 
         run: |
           python main.py
 
       - name: Push changes
         run: |
-          git config --global user.name "${{ secrets.GITHUB_USERNAME }}"
-          git config --global user.email "${{ secrets.GITHUB_EMAIL }}"
+          git config --global user.name "${{ secrets.GIT_USERNAME }}"
+          git config --global user.email "${{ secrets.GIT_EMAIL }}"
 
           git push

@@ -17,8 +17,8 @@ class Config:
     LEETCODE_USERNAME = os.getenv("LEETCODE_USERNAME", "")
     CSRF_TOKEN = os.getenv("CSRF_TOKEN", "")
 
-    GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "")
-    GITHUB_EMAIL = os.getenv("GITHUB_EMAIL", "")
+    GIT_USERNAME = os.getenv("GIT_USERNAME", "")
+    GIT_EMAIL = os.getenv("GIT_EMAIL", "")
 
     DEBUG = False
 
