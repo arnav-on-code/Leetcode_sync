@@ -1,7 +1,10 @@
 from config.settings import Config
 from leetcode.parser import parse_submission_detail, parse_submissions
-from leetcode.queries import (PROFILE_QUERY, RECENT_SUBMISSIONS_QUERY,
-                              SUBMISSION_DETAILS_QUERY)
+from leetcode.queries import (
+    PROFILE_QUERY,
+    RECENT_SUBMISSIONS_QUERY,
+    SUBMISSION_DETAILS_QUERY,
+)
 
 
 class LeetCodeAPI:
