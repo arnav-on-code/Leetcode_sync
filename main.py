@@ -109,6 +109,29 @@ def main():
     if new_submissions:
         detector.update(new_submissions[0])
 
+    detail = api.get_submission_detail(
+    submissions[0].id
+    )
 
+    console.print("\n[bold cyan]Latest Submission Details[/bold cyan]\n")
+
+    console.print(f"Question ID : {detail.question_id}")
+    console.print(f"Slug        : {detail.title_slug}")
+    console.print(f"Language    : {detail.language}")
+    console.print(f"Runtime     : {detail.runtime_display}")
+    console.print(f"Memory      : {detail.memory_display}")
+
+
+    STATUS_MAP = {
+    10: "Accepted",
+    11: "Wrong Answer",
+    12: "Memory Limit Exceeded",
+    13: "Output Limit Exceeded",
+    14: "Time Limit Exceeded",
+    15: "Runtime Error",
+    16: "Internal Error",
+    20: "Compile Error",
+}
+    console.print(f"Status      : {STATUS_MAP.get(detail.status_code, 'Unknown')}")
 if __name__ == "__main__":
     main()
