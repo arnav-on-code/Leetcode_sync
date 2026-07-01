@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+exclude = '''
+/(
+    myenv
+  | storage
+  | logs
+  | .git
+  | __pycache__
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+skip = ["myenv", "storage", "logs", "__pycache__"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
