@@ -1,4 +1,5 @@
 from pathlib import Path
+import shutil
 import subprocess
 
 
@@ -8,36 +9,39 @@ class GitManager:
     """
 
     def __init__(self, repository: Path):
-        self.repository = Path(repository)
+        if shutil.which("git") is None:
+            raise RuntimeError(
+                "Git is not installed or not available in PATH."
+            )
 
-    def run(self, *args):
-        """
-        Execute a git command inside the repository.
-        """
+        self.repository = Path(repository).resolve()
 
-        result = subprocess.run(
-            ["git", *args],
-            cwd=self.repository,
-            capture_output=True,
-            text=True,
-        )
+    def run(self, *args: str) -> str:
+        try:
+            result = subprocess.run(
+                ["git", *args],
+                cwd=self.repository,
+                capture_output=True,
+                text=True,
+                check=True,
+            )
 
-        if result.returncode != 0:
-            raise RuntimeError(result.stderr.strip())
+            return result.stdout.strip()
 
-        return result.stdout.strip()
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(e.stderr.strip()) from e
 
-    def status(self):
+    def status(self) -> str:
         return self.run("status", "--short")
 
-    def add(self):
+    def add(self) -> None:
         self.run("add", ".")
 
-    def commit(self, message: str):
+    def commit(self, message: str) -> None:
         self.run("commit", "-m", message)
 
-    def push(self):
+    def push(self) -> None:
         self.run("push")
 
-    def pull(self):
+    def pull(self) -> None:
         self.run("pull")
