@@ -1,6 +1,5 @@
 import logging
 
-
 from config.settings import Config
 
 
