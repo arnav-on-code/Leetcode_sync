@@ -1,4 +1,3 @@
-
 import pytest
 
 from leetcode.models import Submission, SubmissionDetail
