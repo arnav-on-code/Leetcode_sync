@@ -7,6 +7,7 @@ load_dotenv()
 class Config:
 
     LEETCODE_SESSION = os.getenv("LEETCODE_SESSION", "")
+    LEETCODE_USERNAME = os.getenv("LEETCODE_USERNAME", "")
     CSRF_TOKEN = os.getenv("CSRF_TOKEN", "")
 
     GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "")

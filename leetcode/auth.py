@@ -1,6 +1,6 @@
 from requests import Session
 
-from config import Config
+from config.settings import Config
 
 
 class LeetCodeAuth:
