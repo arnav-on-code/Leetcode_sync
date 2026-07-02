@@ -1,4 +1,3 @@
-
 from github_sync.statistics import StatisticsManager
 
 
