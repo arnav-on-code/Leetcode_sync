@@ -10,9 +10,25 @@ class GitManager:
 
     def __init__(self, repository: Path):
         if shutil.which("git") is None:
-            raise RuntimeError("Git is not installed or not available in PATH.")
+            raise RuntimeError(
+                "Git is not installed or not available in PATH."
+            )
 
         self.repository = Path(repository).resolve()
+
+    def sync(self, commit_message: str) -> None:
+        """
+        Stage, commit and push all changes.
+        """
+
+        self.add()
+
+        if not self.status():
+            print("No changes to commit.")
+            return
+
+        self.commit(commit_message)
+        self.push()
 
     def run(self, *args: str) -> str:
         try:

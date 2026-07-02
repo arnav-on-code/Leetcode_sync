@@ -1,60 +1,73 @@
-# LeetCode Sync
+# 🚀 LeetCode Sync
 
-A Python-based automation tool that synchronizes accepted LeetCode solutions to GitHub without relying on third-party browser extensions.
+Automatically synchronize accepted LeetCode submissions to GitHub.
 
-## Objective
+---
 
-This project aims to build a secure and customizable alternative to browser extensions by automating the entire workflow—from fetching accepted LeetCode submissions to committing and pushing them to a GitHub repository.
-
-## Planned Features
-
-* Fetch accepted LeetCode submissions
-* Download submitted source code
-* Organize solutions by problem number and title
-* Automatically generate and update a README
-* Commit and push new solutions to GitHub
-* Scheduled synchronization using GitHub Actions
-* Logging and error handling
-* Modular and extensible project architecture
-* Unit tests for core components
-
-## Project Structure
+## 📈 Progress
 
 ```text
-leetcode-sync/
-│
-├── README.md
-├── requirements.txt
-├── .env.example
-├── config.py
-├── main.py
-│
-├── leetcode/
-├── github_sync/
-├── storage/
-├── logs/
-├── tests/
-└── .github/
-    └── workflows/
-```
+████████████░░░░░░░░░░░░░░░░░░
 
-## Tech Stack
+Solved: 121 / 300 Problems
 
-* Python
-* Git
-* GitHub Actions
-* Requests
-* BeautifulSoup
-* GitPython
-* python-dotenv
-* Pytest
+📊 Statistics
+Difficulty	Solved
+🟢 Easy	63
+🟡 Medium	52
+🔴 Hard	6
+Total	121
+🔥 Latest Accepted Problem
 
-## Project Status
 
-🚧 This project is currently under active development.
+| Field | Value |
+|------|------|
+| Problem ID | 11 |
+| Title | Container With Most Water |
+| Language | Python3 |
+| Runtime | 64 ms |
+| Memory | 29.5 MB |
 
-The first milestone focuses on setting up the project structure before implementing LeetCode authentication, solution synchronization, Git automation, and scheduled workflows.
 
-## License
+💻 Languages Used
 
-This project is intended for educational and personal use.
+- **Python3** : 1
+
+✨ Features
+Automatic LeetCode synchronization
+Automatic Git commits
+Automatic GitHub push
+Metadata generation
+README generation
+GitHub Actions support
+Unit tests
+📂 Repository Structure
+storage/
+└── solutions/
+    ├── 0011_Container_With_Most_Water/
+    │   ├── solution.py
+    │   └── metadata.json
+    └── ....
+⚙️ Workflow
+LeetCode
+    │
+    ▼
+API
+    │
+    ▼
+Downloader
+    │
+    ▼
+Statistics
+    │
+    ▼
+README Generator
+    │
+    ▼
+Git
+    │
+    ▼
+GitHub
+⏰ Last Sync
+
+2026-07-02T09:32:10.126675
