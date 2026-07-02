@@ -26,6 +26,7 @@ class StatisticsManager:
             "medium": 0,
             "hard": 0,
             "languages": {},
+            "recent_problems": [],
             "last_problem": None,
             "last_sync": None,
         }
@@ -61,7 +62,7 @@ class StatisticsManager:
 
     def update(self, profile, detail):
         """
-        Update statistics using latest profile and submission.
+        Update repository statistics.
         """
 
         stats = self.load()
@@ -76,6 +77,7 @@ class StatisticsManager:
         stats["medium"] = solved.get("Medium", 0)
         stats["hard"] = solved.get("Hard", 0)
 
+
         language = detail.language_verbose
 
         languages = stats.get("languages", {})
@@ -86,7 +88,8 @@ class StatisticsManager:
 
         stats["languages"] = languages
 
-        stats["last_problem"] = {
+
+        latest = {
             "id": detail.question_id,
             "title": detail.title_slug.replace("-", " ").title(),
             "language": detail.language_verbose,
@@ -94,7 +97,27 @@ class StatisticsManager:
             "memory": detail.memory_display,
         }
 
-        stats["last_sync"] = datetime.now().isoformat()
+        stats["last_problem"] = latest
+
+
+        recent = stats.get("recent_problems", [])
+
+        recent.insert(
+            0,
+            {
+                "id": detail.question_id,
+                "title": detail.title_slug.replace("-", " ").title(),
+            },
+        )
+
+
+        stats["recent_problems"] = recent[:5]
+
+        # ---------- Last sync ----------
+
+        stats["last_sync"] = datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
 
         self.save(stats)
 

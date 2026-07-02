@@ -51,11 +51,7 @@ def test_sync_manager_run(
 
     manager.downloader.download = MagicMock()
 
-    manager.git.add = MagicMock()
-
-    manager.git.commit = MagicMock()
-
-    manager.git.push = MagicMock()
+    manager.git.sync = MagicMock()
 
     manager.detector.update = MagicMock()
 
@@ -69,11 +65,8 @@ def test_sync_manager_run(
 
     manager.downloader.download.assert_called_once()
 
-    manager.git.add.assert_called_once()
 
-    manager.git.commit.assert_called_once()
-
-    manager.git.push.assert_called_once()
+    manager.git.sync.assert_called_once()
 
     manager.detector.update.assert_called_once()
 

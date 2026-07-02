@@ -15,11 +15,13 @@ def sample_submission():
 
 
 @pytest.fixture
-def sample_submission_detail():
+def sample_submission_detail(sample_detail):
     """
-    Sample submission detail.
+    Alias for backward compatibility.
     """
-
+    return sample_detail
+@pytest.fixture
+def sample_detail():
     return SubmissionDetail(
         submission_id="2051842379",
         question_id="295",
@@ -31,9 +33,11 @@ def sample_submission_detail():
         memory=41264000,
         memory_display="41.3 MB",
         status_code=10,
-        code=("class MedianFinder:\n" "    pass\n"),
+        code="print('hello')",
         timestamp=1782879665,
     )
+
+
 
 
 @pytest.fixture

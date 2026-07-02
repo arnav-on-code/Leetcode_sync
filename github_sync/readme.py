@@ -28,7 +28,6 @@ class ReadmeGenerator:
 
         latest = stats.get("last_problem")
 
-        # ---------- Languages ----------
         language_lines = []
 
         for language, count in sorted(
@@ -40,7 +39,17 @@ class ReadmeGenerator:
 
         languages = "\n".join(language_lines)
 
-        # ---------- Latest Problem ----------
+        recent = ""
+
+        for problem in stats.get(
+            "recent_problems",
+            [],
+        ):
+            recent += (
+                f'- {problem["id"]} '
+                f'{problem["title"]}\n'
+            )
+
         if latest:
             latest_problem = f"""
 | Field | Value |
@@ -82,6 +91,12 @@ Total	{stats["total"]}
 💻 Languages Used
 
 {languages}
+
+## 📚 Recent Accepted Problems
+
+{recent}
+
+---
 
 ✨ Features
 Automatic LeetCode synchronization
