@@ -34,9 +34,7 @@ def test_generate(tmp_path):
 
     assert path.exists()
 
-    content = path.read_text(
-        encoding="utf-8"
-    )
+    content = path.read_text(encoding="utf-8")
 
     assert "LeetCode Sync" in content
 

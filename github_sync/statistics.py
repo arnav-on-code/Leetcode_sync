@@ -77,17 +77,13 @@ class StatisticsManager:
         stats["medium"] = solved.get("Medium", 0)
         stats["hard"] = solved.get("Hard", 0)
 
-
         language = detail.language_verbose
 
         languages = stats.get("languages", {})
 
-        languages[language] = (
-            languages.get(language, 0) + 1
-        )
+        languages[language] = languages.get(language, 0) + 1
 
         stats["languages"] = languages
-
 
         latest = {
             "id": detail.question_id,
@@ -99,7 +95,6 @@ class StatisticsManager:
 
         stats["last_problem"] = latest
 
-
         recent = stats.get("recent_problems", [])
 
         recent.insert(
@@ -110,14 +105,11 @@ class StatisticsManager:
             },
         )
 
-
         stats["recent_problems"] = recent[:5]
 
         # ---------- Last sync ----------
 
-        stats["last_sync"] = datetime.now().strftime(
-            "%Y-%m-%d %H:%M:%S"
-        )
+        stats["last_sync"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         self.save(stats)
 

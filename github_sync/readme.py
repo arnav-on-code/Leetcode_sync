@@ -45,10 +45,7 @@ class ReadmeGenerator:
             "recent_problems",
             [],
         ):
-            recent += (
-                f'- {problem["id"]} '
-                f'{problem["title"]}\n'
-            )
+            recent += f'- {problem["id"]} ' f'{problem["title"]}\n'
 
         if latest:
             latest_problem = f"""

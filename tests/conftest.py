@@ -20,6 +20,8 @@ def sample_submission_detail(sample_detail):
     Alias for backward compatibility.
     """
     return sample_detail
+
+
 @pytest.fixture
 def sample_detail():
     return SubmissionDetail(
@@ -36,8 +38,6 @@ def sample_detail():
         code="print('hello')",
         timestamp=1782879665,
     )
-
-
 
 
 @pytest.fixture

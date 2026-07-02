@@ -65,7 +65,6 @@ def test_sync_manager_run(
 
     manager.downloader.download.assert_called_once()
 
-
     manager.git.sync.assert_called_once()
 
     manager.detector.update.assert_called_once()
