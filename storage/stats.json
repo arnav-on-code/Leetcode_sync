@@ -4,9 +4,13 @@
     "medium": 53,
     "hard": 6,
     "languages": {
-        "Python3": 5
+        "Python3": 6
     },
     "recent_problems": [
+        {
+            "id": "200",
+            "title": "Number Of Islands"
+        },
         {
             "id": "133",
             "title": "Clone Graph"
@@ -22,18 +26,14 @@
         {
             "id": "1",
             "title": "Two Sum"
-        },
-        {
-            "id": "295",
-            "title": "Find Median From Data Stream"
         }
     ],
     "last_problem": {
-        "id": "133",
-        "title": "Clone Graph",
+        "id": "200",
+        "title": "Number Of Islands",
         "language": "Python3",
-        "runtime": "49 ms",
-        "memory": "19.8 MB"
+        "runtime": "252 ms",
+        "memory": "21.6 MB"
     },
-    "last_sync": "2026-07-03 14:03:05"
+    "last_sync": "2026-07-03 14:03:07"
 }
