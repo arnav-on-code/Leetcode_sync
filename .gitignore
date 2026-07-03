@@ -10,8 +10,6 @@ htmlcov/
 
 logs/
 
-storage/
-
 .env
 
 .vscode/
