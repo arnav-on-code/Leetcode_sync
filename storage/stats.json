@@ -1,13 +1,21 @@
 {
-    "total": 0,
-    "easy": 0,
-    "medium": 0,
-    "hard": 0,
+    "total": 122,
+    "easy": 63,
+    "medium": 53,
+    "hard": 6,
     "languages": {
-        "Python3": 4
+        "Python3": 6
     },
     "recent_problems": [
         {
+            "id": "200",
+            "title": "Number Of Islands"
+        },
+        {
+            "id": "133",
+            "title": "Clone Graph"
+        },
+        {
             "id": "1",
             "title": "Two Sum"
         },
@@ -18,18 +26,14 @@
         {
             "id": "1",
             "title": "Two Sum"
-        },
-        {
-            "id": "295",
-            "title": "Find Median From Data Stream"
         }
     ],
     "last_problem": {
-        "id": "1",
-        "title": "Two Sum",
+        "id": "200",
+        "title": "Number Of Islands",
         "language": "Python3",
-        "runtime": "45 ms",
-        "memory": "17 MB"
+        "runtime": "252 ms",
+        "memory": "21.6 MB"
     },
-    "last_sync": "2026-07-02 12:18:27"
+    "last_sync": "2026-07-03 14:03:07"
 }
