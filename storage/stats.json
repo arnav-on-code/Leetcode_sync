@@ -1,15 +1,15 @@
 {
-    "total": 123,
+    "total": 124,
     "easy": 63,
-    "medium": 54,
+    "medium": 55,
     "hard": 6,
     "languages": {
-        "Python3": 10
+        "Python3": 11
     },
     "recent_problems": [
         {
-            "id": "695",
-            "title": "Max Area Of Island"
+            "id": "417",
+            "title": "Pacific Atlantic Water Flow"
         },
         {
             "id": "695",
@@ -24,16 +24,16 @@
             "title": "Max Area Of Island"
         },
         {
-            "id": "200",
-            "title": "Number Of Islands"
+            "id": "695",
+            "title": "Max Area Of Island"
         }
     ],
     "last_problem": {
-        "id": "695",
-        "title": "Max Area Of Island",
+        "id": "417",
+        "title": "Pacific Atlantic Water Flow",
         "language": "Python3",
-        "runtime": "22 ms",
-        "memory": "20.7 MB"
+        "runtime": "27 ms",
+        "memory": "22.4 MB"
     },
-    "last_sync": "2026-07-05 13:37:57"
+    "last_sync": "2026-07-05 19:17:09"
 }
