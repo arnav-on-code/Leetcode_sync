@@ -4,9 +4,13 @@
     "medium": 54,
     "hard": 6,
     "languages": {
-        "Python3": 8
+        "Python3": 9
     },
     "recent_problems": [
+        {
+            "id": "695",
+            "title": "Max Area Of Island"
+        },
         {
             "id": "695",
             "title": "Max Area Of Island"
@@ -22,10 +26,6 @@
         {
             "id": "133",
             "title": "Clone Graph"
-        },
-        {
-            "id": "1",
-            "title": "Two Sum"
         }
     ],
     "last_problem": {
@@ -35,5 +35,5 @@
         "runtime": "22 ms",
         "memory": "20.7 MB"
     },
-    "last_sync": "2026-07-05 03:21:55"
+    "last_sync": "2026-07-05 08:52:07"
 }
