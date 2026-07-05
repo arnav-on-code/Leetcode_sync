@@ -4,7 +4,7 @@
     "medium": 54,
     "hard": 6,
     "languages": {
-        "Python3": 9
+        "Python3": 10
     },
     "recent_problems": [
         {
@@ -20,12 +20,12 @@
             "title": "Max Area Of Island"
         },
         {
-            "id": "200",
-            "title": "Number Of Islands"
+            "id": "695",
+            "title": "Max Area Of Island"
         },
         {
-            "id": "133",
-            "title": "Clone Graph"
+            "id": "200",
+            "title": "Number Of Islands"
         }
     ],
     "last_problem": {
@@ -35,5 +35,5 @@
         "runtime": "22 ms",
         "memory": "20.7 MB"
     },
-    "last_sync": "2026-07-05 08:52:07"
+    "last_sync": "2026-07-05 13:37:57"
 }
