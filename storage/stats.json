@@ -4,9 +4,13 @@
     "medium": 55,
     "hard": 6,
     "languages": {
-        "Python3": 11
+        "Python3": 12
     },
     "recent_problems": [
+        {
+            "id": "695",
+            "title": "Max Area Of Island"
+        },
         {
             "id": "417",
             "title": "Pacific Atlantic Water Flow"
@@ -22,18 +26,14 @@
         {
             "id": "695",
             "title": "Max Area Of Island"
-        },
-        {
-            "id": "695",
-            "title": "Max Area Of Island"
         }
     ],
     "last_problem": {
-        "id": "417",
-        "title": "Pacific Atlantic Water Flow",
+        "id": "695",
+        "title": "Max Area Of Island",
         "language": "Python3",
-        "runtime": "27 ms",
-        "memory": "22.4 MB"
+        "runtime": "22 ms",
+        "memory": "20.7 MB"
     },
-    "last_sync": "2026-07-05 19:17:09"
+    "last_sync": "2026-07-05 19:17:10"
 }
