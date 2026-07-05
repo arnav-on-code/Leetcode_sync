@@ -31,15 +31,15 @@ Total	123
 
 💻 Languages Used
 
-- **Python3** : 7
+- **Python3** : 8
 
 ## 📚 Recent Accepted Problems
 
 - 695 Max Area Of Island
+- 695 Max Area Of Island
 - 200 Number Of Islands
 - 133 Clone Graph
 - 1 Two Sum
-- 295 Find Median From Data Stream
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-04 19:12:15
+2026-07-05 03:21:55
