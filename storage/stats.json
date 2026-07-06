@@ -1,12 +1,16 @@
 {
-    "total": 124,
+    "total": 125,
     "easy": 63,
-    "medium": 55,
+    "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 12
+        "Python3": 13
     },
     "recent_problems": [
+        {
+            "id": "207",
+            "title": "Course Schedule"
+        },
         {
             "id": "695",
             "title": "Max Area Of Island"
@@ -22,18 +26,14 @@
         {
             "id": "695",
             "title": "Max Area Of Island"
-        },
-        {
-            "id": "695",
-            "title": "Max Area Of Island"
         }
     ],
     "last_problem": {
-        "id": "695",
-        "title": "Max Area Of Island",
+        "id": "207",
+        "title": "Course Schedule",
         "language": "Python3",
-        "runtime": "22 ms",
-        "memory": "20.7 MB"
+        "runtime": "7 ms",
+        "memory": "21.7 MB"
     },
-    "last_sync": "2026-07-05 19:17:10"
+    "last_sync": "2026-07-06 19:56:11"
 }

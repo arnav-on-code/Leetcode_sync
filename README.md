@@ -9,35 +9,35 @@ Automatically synchronize accepted LeetCode submissions to GitHub.
 ```text
 ████████████░░░░░░░░░░░░░░░░░░
 
-Solved: 124 / 300 Problems
+Solved: 125 / 300 Problems
 
 📊 Statistics
 Difficulty	Solved
 🟢 Easy	63
-🟡 Medium	55
+🟡 Medium	56
 🔴 Hard	6
-Total	124
+Total	125
 🔥 Latest Accepted Problem
 
 
 | Field | Value |
 |------|------|
-| Problem ID | 695 |
-| Title | Max Area Of Island |
+| Problem ID | 207 |
+| Title | Course Schedule |
 | Language | Python3 |
-| Runtime | 22 ms |
-| Memory | 20.7 MB |
+| Runtime | 7 ms |
+| Memory | 21.7 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 12
+- **Python3** : 13
 
 ## 📚 Recent Accepted Problems
 
+- 207 Course Schedule
 - 695 Max Area Of Island
 - 417 Pacific Atlantic Water Flow
-- 695 Max Area Of Island
 - 695 Max Area Of Island
 - 695 Max Area Of Island
 
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-05 19:17:10
+2026-07-06 19:56:11
