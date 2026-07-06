@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 24
+        "Python3": 25
     },
     "recent_problems": [
+        {
+            "id": "104",
+            "title": "Maximum Depth Of Binary Tree"
+        },
         {
             "id": "235",
             "title": "Lowest Common Ancestor Of A Binary Search Tree"
@@ -22,18 +26,14 @@
         {
             "id": "1127",
             "title": "Last Stone Weight"
-        },
-        {
-            "id": "1014",
-            "title": "K Closest Points To Origin"
         }
     ],
     "last_problem": {
-        "id": "235",
-        "title": "Lowest Common Ancestor Of A Binary Search Tree",
+        "id": "104",
+        "title": "Maximum Depth Of Binary Tree",
         "language": "Python3",
-        "runtime": "66 ms",
-        "memory": "22.8 MB"
+        "runtime": "0 ms",
+        "memory": "20.3 MB"
     },
-    "last_sync": "2026-07-06 19:56:24"
+    "last_sync": "2026-07-06 19:56:26"
 }
