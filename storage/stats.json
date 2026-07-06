@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 25
+        "Python3": 26
     },
     "recent_problems": [
+        {
+            "id": "226",
+            "title": "Invert Binary Tree"
+        },
         {
             "id": "104",
             "title": "Maximum Depth Of Binary Tree"
@@ -22,18 +26,14 @@
         {
             "id": "789",
             "title": "Kth Largest Element In A Stream"
-        },
-        {
-            "id": "1127",
-            "title": "Last Stone Weight"
         }
     ],
     "last_problem": {
-        "id": "104",
-        "title": "Maximum Depth Of Binary Tree",
+        "id": "226",
+        "title": "Invert Binary Tree",
         "language": "Python3",
         "runtime": "0 ms",
-        "memory": "20.3 MB"
+        "memory": "19.1 MB"
     },
-    "last_sync": "2026-07-06 19:56:26"
+    "last_sync": "2026-07-06 19:56:28"
 }

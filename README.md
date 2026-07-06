@@ -22,24 +22,24 @@ Total	125
 
 | Field | Value |
 |------|------|
-| Problem ID | 104 |
-| Title | Maximum Depth Of Binary Tree |
+| Problem ID | 226 |
+| Title | Invert Binary Tree |
 | Language | Python3 |
 | Runtime | 0 ms |
-| Memory | 20.3 MB |
+| Memory | 19.1 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 25
+- **Python3** : 26
 
 ## 📚 Recent Accepted Problems
 
+- 226 Invert Binary Tree
 - 104 Maximum Depth Of Binary Tree
 - 235 Lowest Common Ancestor Of A Binary Search Tree
 - 124 Binary Tree Maximum Path Sum
 - 789 Kth Largest Element In A Stream
-- 1127 Last Stone Weight
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-06 19:56:26
+2026-07-06 19:56:28
