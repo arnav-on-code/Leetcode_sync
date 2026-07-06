@@ -22,24 +22,24 @@ Total	125
 
 | Field | Value |
 |------|------|
-| Problem ID | 226 |
-| Title | Invert Binary Tree |
+| Problem ID | 230 |
+| Title | Kth Smallest Element In A Bst |
 | Language | Python3 |
 | Runtime | 0 ms |
-| Memory | 19.1 MB |
+| Memory | 22.1 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 26
+- **Python3** : 27
 
 ## 📚 Recent Accepted Problems
 
+- 230 Kth Smallest Element In A Bst
 - 226 Invert Binary Tree
 - 104 Maximum Depth Of Binary Tree
 - 235 Lowest Common Ancestor Of A Binary Search Tree
 - 124 Binary Tree Maximum Path Sum
-- 789 Kth Largest Element In A Stream
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-06 19:56:28
+2026-07-06 19:56:30

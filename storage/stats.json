@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 26
+        "Python3": 27
     },
     "recent_problems": [
+        {
+            "id": "230",
+            "title": "Kth Smallest Element In A Bst"
+        },
         {
             "id": "226",
             "title": "Invert Binary Tree"
@@ -22,18 +26,14 @@
         {
             "id": "124",
             "title": "Binary Tree Maximum Path Sum"
-        },
-        {
-            "id": "789",
-            "title": "Kth Largest Element In A Stream"
         }
     ],
     "last_problem": {
-        "id": "226",
-        "title": "Invert Binary Tree",
+        "id": "230",
+        "title": "Kth Smallest Element In A Bst",
         "language": "Python3",
         "runtime": "0 ms",
-        "memory": "19.1 MB"
+        "memory": "22.1 MB"
     },
-    "last_sync": "2026-07-06 19:56:28"
+    "last_sync": "2026-07-06 19:56:30"
 }
