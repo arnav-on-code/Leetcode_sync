@@ -22,24 +22,24 @@ Total	125
 
 | Field | Value |
 |------|------|
-| Problem ID | 124 |
-| Title | Binary Tree Maximum Path Sum |
+| Problem ID | 235 |
+| Title | Lowest Common Ancestor Of A Binary Search Tree |
 | Language | Python3 |
-| Runtime | 4 ms |
-| Memory | 23.9 MB |
+| Runtime | 66 ms |
+| Memory | 22.8 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 23
+- **Python3** : 24
 
 ## 📚 Recent Accepted Problems
 
+- 235 Lowest Common Ancestor Of A Binary Search Tree
 - 124 Binary Tree Maximum Path Sum
 - 789 Kth Largest Element In A Stream
 - 1127 Last Stone Weight
 - 1014 K Closest Points To Origin
-- 295 Find Median From Data Stream
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-06 19:56:23
+2026-07-06 19:56:24
