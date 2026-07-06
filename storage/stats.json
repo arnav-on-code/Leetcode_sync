@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 16
+        "Python3": 17
     },
     "recent_problems": [
+        {
+            "id": "200",
+            "title": "Number Of Islands"
+        },
         {
             "id": "133",
             "title": "Clone Graph"
@@ -22,18 +26,14 @@
         {
             "id": "207",
             "title": "Course Schedule"
-        },
-        {
-            "id": "695",
-            "title": "Max Area Of Island"
         }
     ],
     "last_problem": {
-        "id": "133",
-        "title": "Clone Graph",
+        "id": "200",
+        "title": "Number Of Islands",
         "language": "Python3",
-        "runtime": "49 ms",
-        "memory": "19.8 MB"
+        "runtime": "252 ms",
+        "memory": "21.6 MB"
     },
-    "last_sync": "2026-07-06 19:56:15"
+    "last_sync": "2026-07-06 19:56:16"
 }
