@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 42
+        "Python3": 43
     },
     "recent_problems": [
+        {
+            "id": "695",
+            "title": "Max Area Of Island"
+        },
         {
             "id": "417",
             "title": "Pacific Atlantic Water Flow"
@@ -22,18 +26,14 @@
         {
             "id": "235",
             "title": "Lowest Common Ancestor Of A Binary Search Tree"
-        },
-        {
-            "id": "124",
-            "title": "Binary Tree Maximum Path Sum"
         }
     ],
     "last_problem": {
-        "id": "417",
-        "title": "Pacific Atlantic Water Flow",
+        "id": "695",
+        "title": "Max Area Of Island",
         "language": "Python3",
-        "runtime": "28 ms",
-        "memory": "22.4 MB"
+        "runtime": "22 ms",
+        "memory": "20.7 MB"
     },
-    "last_sync": "2026-07-07 09:40:17"
+    "last_sync": "2026-07-07 09:40:18"
 }
