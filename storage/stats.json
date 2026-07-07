@@ -4,9 +4,13 @@
     "medium": 57,
     "hard": 6,
     "languages": {
-        "Python3": 67
+        "Python3": 68
     },
     "recent_problems": [
+        {
+            "id": "295",
+            "title": "Find Median From Data Stream"
+        },
         {
             "id": "11",
             "title": "Container With Most Water"
@@ -22,18 +26,14 @@
         {
             "id": "695",
             "title": "Max Area Of Island"
-        },
-        {
-            "id": "417",
-            "title": "Pacific Atlantic Water Flow"
         }
     ],
     "last_problem": {
-        "id": "11",
-        "title": "Container With Most Water",
+        "id": "295",
+        "title": "Find Median From Data Stream",
         "language": "Python3",
-        "runtime": "64 ms",
-        "memory": "29.5 MB"
+        "runtime": "177 ms",
+        "memory": "41.3 MB"
     },
-    "last_sync": "2026-07-07 19:54:34"
+    "last_sync": "2026-07-07 19:54:35"
 }
