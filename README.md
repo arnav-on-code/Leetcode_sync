@@ -22,24 +22,24 @@ Total	125
 
 | Field | Value |
 |------|------|
-| Problem ID | 230 |
-| Title | Kth Smallest Element In A Bst |
+| Problem ID | 207 |
+| Title | Course Schedule |
 | Language | Python3 |
-| Runtime | 0 ms |
-| Memory | 22.1 MB |
+| Runtime | 7 ms |
+| Memory | 21.7 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 27
+- **Python3** : 28
 
 ## 📚 Recent Accepted Problems
 
+- 207 Course Schedule
 - 230 Kth Smallest Element In A Bst
 - 226 Invert Binary Tree
 - 104 Maximum Depth Of Binary Tree
 - 235 Lowest Common Ancestor Of A Binary Search Tree
-- 124 Binary Tree Maximum Path Sum
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-06 19:56:30
+2026-07-07 03:20:31

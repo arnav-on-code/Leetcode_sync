@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 27
+        "Python3": 28
     },
     "recent_problems": [
+        {
+            "id": "207",
+            "title": "Course Schedule"
+        },
         {
             "id": "230",
             "title": "Kth Smallest Element In A Bst"
@@ -22,18 +26,14 @@
         {
             "id": "235",
             "title": "Lowest Common Ancestor Of A Binary Search Tree"
-        },
-        {
-            "id": "124",
-            "title": "Binary Tree Maximum Path Sum"
         }
     ],
     "last_problem": {
-        "id": "230",
-        "title": "Kth Smallest Element In A Bst",
+        "id": "207",
+        "title": "Course Schedule",
         "language": "Python3",
-        "runtime": "0 ms",
-        "memory": "22.1 MB"
+        "runtime": "7 ms",
+        "memory": "21.7 MB"
     },
-    "last_sync": "2026-07-06 19:56:30"
+    "last_sync": "2026-07-07 03:20:31"
 }
