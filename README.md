@@ -9,37 +9,37 @@ Automatically synchronize accepted LeetCode submissions to GitHub.
 ```text
 ████████████░░░░░░░░░░░░░░░░░░
 
-Solved: 125 / 300 Problems
+Solved: 126 / 300 Problems
 
 📊 Statistics
 Difficulty	Solved
 🟢 Easy	63
-🟡 Medium	56
+🟡 Medium	57
 🔴 Hard	6
-Total	125
+Total	126
 🔥 Latest Accepted Problem
 
 
 | Field | Value |
 |------|------|
-| Problem ID | 1127 |
-| Title | Last Stone Weight |
+| Problem ID | 1036 |
+| Title | Rotting Oranges |
 | Language | Python3 |
-| Runtime | 3 ms |
-| Memory | 19.4 MB |
+| Runtime | 4 ms |
+| Memory | 19.5 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 60
+- **Python3** : 61
 
 ## 📚 Recent Accepted Problems
 
+- 1036 Rotting Oranges
 - 1127 Last Stone Weight
 - 1014 K Closest Points To Origin
 - 295 Find Median From Data Stream
 - 11 Container With Most Water
-- 200 Number Of Islands
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-07 14:32:47
+2026-07-07 19:54:26
