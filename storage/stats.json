@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 30
+        "Python3": 31
     },
     "recent_problems": [
+        {
+            "id": "133",
+            "title": "Clone Graph"
+        },
         {
             "id": "695",
             "title": "Max Area Of Island"
@@ -22,18 +26,14 @@
         {
             "id": "230",
             "title": "Kth Smallest Element In A Bst"
-        },
-        {
-            "id": "226",
-            "title": "Invert Binary Tree"
         }
     ],
     "last_problem": {
-        "id": "695",
-        "title": "Max Area Of Island",
+        "id": "133",
+        "title": "Clone Graph",
         "language": "Python3",
-        "runtime": "22 ms",
-        "memory": "20.7 MB"
+        "runtime": "49 ms",
+        "memory": "19.8 MB"
     },
-    "last_sync": "2026-07-07 03:20:33"
+    "last_sync": "2026-07-07 03:20:34"
 }
