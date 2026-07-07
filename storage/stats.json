@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 28
+        "Python3": 29
     },
     "recent_problems": [
+        {
+            "id": "417",
+            "title": "Pacific Atlantic Water Flow"
+        },
         {
             "id": "207",
             "title": "Course Schedule"
@@ -22,18 +26,14 @@
         {
             "id": "104",
             "title": "Maximum Depth Of Binary Tree"
-        },
-        {
-            "id": "235",
-            "title": "Lowest Common Ancestor Of A Binary Search Tree"
         }
     ],
     "last_problem": {
-        "id": "207",
-        "title": "Course Schedule",
+        "id": "417",
+        "title": "Pacific Atlantic Water Flow",
         "language": "Python3",
-        "runtime": "7 ms",
-        "memory": "21.7 MB"
+        "runtime": "28 ms",
+        "memory": "22.4 MB"
     },
-    "last_sync": "2026-07-07 03:20:31"
+    "last_sync": "2026-07-07 03:20:32"
 }
