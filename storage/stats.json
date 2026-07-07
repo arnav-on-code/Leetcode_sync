@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 51
+        "Python3": 52
     },
     "recent_problems": [
+        {
+            "id": "207",
+            "title": "Course Schedule"
+        },
         {
             "id": "124",
             "title": "Binary Tree Maximum Path Sum"
@@ -22,18 +26,14 @@
         {
             "id": "1014",
             "title": "K Closest Points To Origin"
-        },
-        {
-            "id": "295",
-            "title": "Find Median From Data Stream"
         }
     ],
     "last_problem": {
-        "id": "124",
-        "title": "Binary Tree Maximum Path Sum",
+        "id": "207",
+        "title": "Course Schedule",
         "language": "Python3",
-        "runtime": "4 ms",
-        "memory": "23.9 MB"
+        "runtime": "7 ms",
+        "memory": "21.7 MB"
     },
-    "last_sync": "2026-07-07 09:40:30"
+    "last_sync": "2026-07-07 14:32:35"
 }

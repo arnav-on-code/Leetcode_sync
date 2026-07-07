@@ -22,24 +22,24 @@ Total	125
 
 | Field | Value |
 |------|------|
-| Problem ID | 124 |
-| Title | Binary Tree Maximum Path Sum |
+| Problem ID | 207 |
+| Title | Course Schedule |
 | Language | Python3 |
-| Runtime | 4 ms |
-| Memory | 23.9 MB |
+| Runtime | 7 ms |
+| Memory | 21.7 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 51
+- **Python3** : 52
 
 ## 📚 Recent Accepted Problems
 
+- 207 Course Schedule
 - 124 Binary Tree Maximum Path Sum
 - 789 Kth Largest Element In A Stream
 - 1127 Last Stone Weight
 - 1014 K Closest Points To Origin
-- 295 Find Median From Data Stream
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-07 09:40:30
+2026-07-07 14:32:35
