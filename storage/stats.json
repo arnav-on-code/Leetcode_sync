@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 38
+        "Python3": 39
     },
     "recent_problems": [
+        {
+            "id": "235",
+            "title": "Lowest Common Ancestor Of A Binary Search Tree"
+        },
         {
             "id": "124",
             "title": "Binary Tree Maximum Path Sum"
@@ -22,18 +26,14 @@
         {
             "id": "1014",
             "title": "K Closest Points To Origin"
-        },
-        {
-            "id": "295",
-            "title": "Find Median From Data Stream"
         }
     ],
     "last_problem": {
-        "id": "124",
-        "title": "Binary Tree Maximum Path Sum",
+        "id": "235",
+        "title": "Lowest Common Ancestor Of A Binary Search Tree",
         "language": "Python3",
-        "runtime": "4 ms",
-        "memory": "23.9 MB"
+        "runtime": "66 ms",
+        "memory": "22.8 MB"
     },
-    "last_sync": "2026-07-07 03:20:41"
+    "last_sync": "2026-07-07 03:20:42"
 }
