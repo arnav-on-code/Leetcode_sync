@@ -22,24 +22,24 @@ Total	125
 
 | Field | Value |
 |------|------|
-| Problem ID | 1127 |
-| Title | Last Stone Weight |
+| Problem ID | 789 |
+| Title | Kth Largest Element In A Stream |
 | Language | Python3 |
-| Runtime | 3 ms |
-| Memory | 19.4 MB |
+| Runtime | 16 ms |
+| Memory | 25.5 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 49
+- **Python3** : 50
 
 ## 📚 Recent Accepted Problems
 
+- 789 Kth Largest Element In A Stream
 - 1127 Last Stone Weight
 - 1014 K Closest Points To Origin
 - 295 Find Median From Data Stream
 - 11 Container With Most Water
-- 200 Number Of Islands
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-07 09:40:26
+2026-07-07 09:40:28
