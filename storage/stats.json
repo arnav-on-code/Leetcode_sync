@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 43
+        "Python3": 44
     },
     "recent_problems": [
+        {
+            "id": "133",
+            "title": "Clone Graph"
+        },
         {
             "id": "695",
             "title": "Max Area Of Island"
@@ -22,18 +26,14 @@
         {
             "id": "104",
             "title": "Maximum Depth Of Binary Tree"
-        },
-        {
-            "id": "235",
-            "title": "Lowest Common Ancestor Of A Binary Search Tree"
         }
     ],
     "last_problem": {
-        "id": "695",
-        "title": "Max Area Of Island",
+        "id": "133",
+        "title": "Clone Graph",
         "language": "Python3",
-        "runtime": "22 ms",
-        "memory": "20.7 MB"
+        "runtime": "49 ms",
+        "memory": "19.8 MB"
     },
-    "last_sync": "2026-07-07 09:40:18"
+    "last_sync": "2026-07-07 09:40:19"
 }
