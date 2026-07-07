@@ -22,24 +22,24 @@ Total	125
 
 | Field | Value |
 |------|------|
-| Problem ID | 104 |
-| Title | Maximum Depth Of Binary Tree |
+| Problem ID | 207 |
+| Title | Course Schedule |
 | Language | Python3 |
-| Runtime | 0 ms |
-| Memory | 20.3 MB |
+| Runtime | 7 ms |
+| Memory | 21.7 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 40
+- **Python3** : 41
 
 ## 📚 Recent Accepted Problems
 
+- 207 Course Schedule
 - 104 Maximum Depth Of Binary Tree
 - 235 Lowest Common Ancestor Of A Binary Search Tree
 - 124 Binary Tree Maximum Path Sum
 - 789 Kth Largest Element In A Stream
-- 1127 Last Stone Weight
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-07 03:20:43
+2026-07-07 09:40:16
