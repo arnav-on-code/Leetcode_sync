@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 58
+        "Python3": 59
     },
     "recent_problems": [
+        {
+            "id": "1014",
+            "title": "K Closest Points To Origin"
+        },
         {
             "id": "295",
             "title": "Find Median From Data Stream"
@@ -22,18 +26,14 @@
         {
             "id": "133",
             "title": "Clone Graph"
-        },
-        {
-            "id": "695",
-            "title": "Max Area Of Island"
         }
     ],
     "last_problem": {
-        "id": "295",
-        "title": "Find Median From Data Stream",
+        "id": "1014",
+        "title": "K Closest Points To Origin",
         "language": "Python3",
-        "runtime": "177 ms",
-        "memory": "41.3 MB"
+        "runtime": "75 ms",
+        "memory": "25.7 MB"
     },
-    "last_sync": "2026-07-07 14:32:44"
+    "last_sync": "2026-07-07 14:32:45"
 }
