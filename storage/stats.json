@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 36
+        "Python3": 37
     },
     "recent_problems": [
+        {
+            "id": "789",
+            "title": "Kth Largest Element In A Stream"
+        },
         {
             "id": "1127",
             "title": "Last Stone Weight"
@@ -22,18 +26,14 @@
         {
             "id": "11",
             "title": "Container With Most Water"
-        },
-        {
-            "id": "200",
-            "title": "Number Of Islands"
         }
     ],
     "last_problem": {
-        "id": "1127",
-        "title": "Last Stone Weight",
+        "id": "789",
+        "title": "Kth Largest Element In A Stream",
         "language": "Python3",
-        "runtime": "3 ms",
-        "memory": "19.4 MB"
+        "runtime": "16 ms",
+        "memory": "25.5 MB"
     },
-    "last_sync": "2026-07-07 03:20:39"
+    "last_sync": "2026-07-07 03:20:40"
 }
