@@ -4,9 +4,13 @@
     "medium": 56,
     "hard": 6,
     "languages": {
-        "Python3": 59
+        "Python3": 60
     },
     "recent_problems": [
+        {
+            "id": "1127",
+            "title": "Last Stone Weight"
+        },
         {
             "id": "1014",
             "title": "K Closest Points To Origin"
@@ -22,18 +26,14 @@
         {
             "id": "200",
             "title": "Number Of Islands"
-        },
-        {
-            "id": "133",
-            "title": "Clone Graph"
         }
     ],
     "last_problem": {
-        "id": "1014",
-        "title": "K Closest Points To Origin",
+        "id": "1127",
+        "title": "Last Stone Weight",
         "language": "Python3",
-        "runtime": "75 ms",
-        "memory": "25.7 MB"
+        "runtime": "3 ms",
+        "memory": "19.4 MB"
     },
-    "last_sync": "2026-07-07 14:32:45"
+    "last_sync": "2026-07-07 14:32:47"
 }
