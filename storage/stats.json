@@ -4,9 +4,13 @@
     "medium": 57,
     "hard": 6,
     "languages": {
-        "Python3": 68
+        "Python3": 69
     },
     "recent_problems": [
+        {
+            "id": "1036",
+            "title": "Rotting Oranges"
+        },
         {
             "id": "295",
             "title": "Find Median From Data Stream"
@@ -22,18 +26,14 @@
         {
             "id": "133",
             "title": "Clone Graph"
-        },
-        {
-            "id": "695",
-            "title": "Max Area Of Island"
         }
     ],
     "last_problem": {
-        "id": "295",
-        "title": "Find Median From Data Stream",
+        "id": "1036",
+        "title": "Rotting Oranges",
         "language": "Python3",
-        "runtime": "177 ms",
-        "memory": "41.3 MB"
+        "runtime": "4 ms",
+        "memory": "19.5 MB"
     },
-    "last_sync": "2026-07-07 19:54:35"
+    "last_sync": "2026-07-08 02:37:55"
 }
