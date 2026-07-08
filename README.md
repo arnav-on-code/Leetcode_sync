@@ -22,24 +22,24 @@ Total	126
 
 | Field | Value |
 |------|------|
-| Problem ID | 200 |
-| Title | Number Of Islands |
+| Problem ID | 1036 |
+| Title | Rotting Oranges |
 | Language | Python3 |
-| Runtime | 252 ms |
-| Memory | 21.6 MB |
+| Runtime | 4 ms |
+| Memory | 19.5 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 74
+- **Python3** : 75
 
 ## 📚 Recent Accepted Problems
 
+- 1036 Rotting Oranges
 - 200 Number Of Islands
 - 133 Clone Graph
 - 695 Max Area Of Island
 - 417 Pacific Atlantic Water Flow
-- 207 Course Schedule
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-08 02:38:01
+2026-07-08 08:27:22
