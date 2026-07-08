@@ -22,24 +22,24 @@ Total	126
 
 | Field | Value |
 |------|------|
-| Problem ID | 1036 |
-| Title | Rotting Oranges |
+| Problem ID | 207 |
+| Title | Course Schedule |
 | Language | Python3 |
-| Runtime | 4 ms |
-| Memory | 19.5 MB |
+| Runtime | 7 ms |
+| Memory | 21.7 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 79
+- **Python3** : 80
 
 ## 📚 Recent Accepted Problems
 
+- 207 Course Schedule
 - 1036 Rotting Oranges
 - 695 Max Area Of Island
 - 417 Pacific Atlantic Water Flow
 - 207 Course Schedule
-- 1036 Rotting Oranges
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-08 14:04:56
+2026-07-08 14:04:58
