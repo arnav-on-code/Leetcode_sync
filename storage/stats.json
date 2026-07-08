@@ -4,9 +4,13 @@
     "medium": 57,
     "hard": 6,
     "languages": {
-        "Python3": 78
+        "Python3": 79
     },
     "recent_problems": [
+        {
+            "id": "1036",
+            "title": "Rotting Oranges"
+        },
         {
             "id": "695",
             "title": "Max Area Of Island"
@@ -22,18 +26,14 @@
         {
             "id": "1036",
             "title": "Rotting Oranges"
-        },
-        {
-            "id": "200",
-            "title": "Number Of Islands"
         }
     ],
     "last_problem": {
-        "id": "695",
-        "title": "Max Area Of Island",
+        "id": "1036",
+        "title": "Rotting Oranges",
         "language": "Python3",
-        "runtime": "22 ms",
-        "memory": "20.7 MB"
+        "runtime": "4 ms",
+        "memory": "19.5 MB"
     },
-    "last_sync": "2026-07-08 08:27:26"
+    "last_sync": "2026-07-08 14:04:56"
 }
