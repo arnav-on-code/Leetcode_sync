@@ -9,37 +9,37 @@ Automatically synchronize accepted LeetCode submissions to GitHub.
 ```text
 ████████████░░░░░░░░░░░░░░░░░░
 
-Solved: 126 / 300 Problems
+Solved: 127 / 300 Problems
 
 📊 Statistics
 Difficulty	Solved
 🟢 Easy	63
-🟡 Medium	57
+🟡 Medium	58
 🔴 Hard	6
-Total	126
+Total	127
 🔥 Latest Accepted Problem
 
 
 | Field | Value |
 |------|------|
-| Problem ID | 207 |
-| Title | Course Schedule |
+| Problem ID | 4136 |
+| Title | Concatenate Non Zero Digits And Multiply By Sum Ii |
 | Language | Python3 |
-| Runtime | 7 ms |
-| Memory | 21.7 MB |
+| Runtime | 361 ms |
+| Memory | 57.8 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 80
+- **Python3** : 81
 
 ## 📚 Recent Accepted Problems
 
+- 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
 - 207 Course Schedule
 - 1036 Rotting Oranges
 - 695 Max Area Of Island
 - 417 Pacific Atlantic Water Flow
-- 207 Course Schedule
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-08 14:04:58
+2026-07-09 09:38:36

@@ -1,12 +1,16 @@
 {
-    "total": 126,
+    "total": 127,
     "easy": 63,
-    "medium": 57,
+    "medium": 58,
     "hard": 6,
     "languages": {
-        "Python3": 80
+        "Python3": 81
     },
     "recent_problems": [
+        {
+            "id": "4136",
+            "title": "Concatenate Non Zero Digits And Multiply By Sum Ii"
+        },
         {
             "id": "207",
             "title": "Course Schedule"
@@ -22,18 +26,14 @@
         {
             "id": "417",
             "title": "Pacific Atlantic Water Flow"
-        },
-        {
-            "id": "207",
-            "title": "Course Schedule"
         }
     ],
     "last_problem": {
-        "id": "207",
-        "title": "Course Schedule",
+        "id": "4136",
+        "title": "Concatenate Non Zero Digits And Multiply By Sum Ii",
         "language": "Python3",
-        "runtime": "7 ms",
-        "memory": "21.7 MB"
+        "runtime": "361 ms",
+        "memory": "57.8 MB"
     },
-    "last_sync": "2026-07-08 14:04:58"
+    "last_sync": "2026-07-09 09:38:36"
 }
