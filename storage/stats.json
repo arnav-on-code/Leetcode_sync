@@ -4,9 +4,13 @@
     "medium": 58,
     "hard": 6,
     "languages": {
-        "Python3": 81
+        "Python3": 82
     },
     "recent_problems": [
+        {
+            "id": "4136",
+            "title": "Concatenate Non Zero Digits And Multiply By Sum Ii"
+        },
         {
             "id": "4136",
             "title": "Concatenate Non Zero Digits And Multiply By Sum Ii"
@@ -22,10 +26,6 @@
         {
             "id": "695",
             "title": "Max Area Of Island"
-        },
-        {
-            "id": "417",
-            "title": "Pacific Atlantic Water Flow"
         }
     ],
     "last_problem": {
@@ -35,5 +35,5 @@
         "runtime": "361 ms",
         "memory": "57.8 MB"
     },
-    "last_sync": "2026-07-09 09:38:36"
+    "last_sync": "2026-07-09 14:57:48"
 }
