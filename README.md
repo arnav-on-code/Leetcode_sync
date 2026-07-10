@@ -22,21 +22,21 @@ Total	128
 
 | Field | Value |
 |------|------|
-| Problem ID | 130 |
-| Title | Surrounded Regions |
+| Problem ID | 4136 |
+| Title | Concatenate Non Zero Digits And Multiply By Sum Ii |
 | Language | Python3 |
-| Runtime | 8 ms |
-| Memory | 22.3 MB |
+| Runtime | 361 ms |
+| Memory | 57.8 MB |
 
 
 💻 Languages Used
 
-- **Python3** : 87
+- **Python3** : 88
 
 ## 📚 Recent Accepted Problems
 
-- 130 Surrounded Regions
 - 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
+- 130 Surrounded Regions
 - 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
 - 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
 - 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-10 19:26:33
+2026-07-10 19:26:35
