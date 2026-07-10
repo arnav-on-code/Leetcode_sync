@@ -4,7 +4,7 @@
     "medium": 58,
     "hard": 6,
     "languages": {
-        "Python3": 84
+        "Python3": 85
     },
     "recent_problems": [
         {
@@ -24,8 +24,8 @@
             "title": "Concatenate Non Zero Digits And Multiply By Sum Ii"
         },
         {
-            "id": "207",
-            "title": "Course Schedule"
+            "id": "4136",
+            "title": "Concatenate Non Zero Digits And Multiply By Sum Ii"
         }
     ],
     "last_problem": {
@@ -35,5 +35,5 @@
         "runtime": "361 ms",
         "memory": "57.8 MB"
     },
-    "last_sync": "2026-07-10 03:16:11"
+    "last_sync": "2026-07-10 09:33:58"
 }
