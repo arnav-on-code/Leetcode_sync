@@ -31,15 +31,15 @@ Total	127
 
 💻 Languages Used
 
-- **Python3** : 83
+- **Python3** : 84
 
 ## 📚 Recent Accepted Problems
 
 - 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
 - 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
 - 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
+- 4136 Concatenate Non Zero Digits And Multiply By Sum Ii
 - 207 Course Schedule
-- 1036 Rotting Oranges
 
 
 ---
@@ -81,4 +81,4 @@ Git
 GitHub
 ⏰ Last Sync
 
-2026-07-09 19:45:44
+2026-07-10 03:16:11
