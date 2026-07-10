@@ -1,15 +1,15 @@
 {
-    "total": 127,
+    "total": 128,
     "easy": 63,
-    "medium": 58,
+    "medium": 59,
     "hard": 6,
     "languages": {
-        "Python3": 86
+        "Python3": 87
     },
     "recent_problems": [
         {
-            "id": "4136",
-            "title": "Concatenate Non Zero Digits And Multiply By Sum Ii"
+            "id": "130",
+            "title": "Surrounded Regions"
         },
         {
             "id": "4136",
@@ -29,11 +29,11 @@
         }
     ],
     "last_problem": {
-        "id": "4136",
-        "title": "Concatenate Non Zero Digits And Multiply By Sum Ii",
+        "id": "130",
+        "title": "Surrounded Regions",
         "language": "Python3",
-        "runtime": "361 ms",
-        "memory": "57.8 MB"
+        "runtime": "8 ms",
+        "memory": "22.3 MB"
     },
-    "last_sync": "2026-07-10 14:25:27"
+    "last_sync": "2026-07-10 19:26:33"
 }
