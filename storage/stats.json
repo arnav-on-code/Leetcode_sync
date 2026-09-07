@@ -1,12 +1,20 @@
 {
-    "total": 122,
-    "easy": 63,
-    "medium": 53,
-    "hard": 6,
+    "total": 0,
+    "easy": 0,
+    "medium": 0,
+    "hard": 0,
     "languages": {
-        "Python3": 6
+        "Python3": 8
     },
     "recent_problems": [
+        {
+            "id": "1",
+            "title": "Two Sum"
+        },
+        {
+            "id": "295",
+            "title": "Find Median From Data Stream"
+        },
         {
             "id": "200",
             "title": "Number Of Islands"
@@ -18,22 +26,14 @@
         {
             "id": "1",
             "title": "Two Sum"
-        },
-        {
-            "id": "295",
-            "title": "Find Median From Data Stream"
-        },
-        {
-            "id": "1",
-            "title": "Two Sum"
         }
     ],
     "last_problem": {
-        "id": "200",
-        "title": "Number Of Islands",
+        "id": "1",
+        "title": "Two Sum",
         "language": "Python3",
-        "runtime": "252 ms",
-        "memory": "21.6 MB"
+        "runtime": "45 ms",
+        "memory": "17 MB"
     },
-    "last_sync": "2026-07-03 14:03:07"
+    "last_sync": "2026-09-07 22:48:01"
 }
