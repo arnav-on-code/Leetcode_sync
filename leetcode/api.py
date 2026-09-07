@@ -13,7 +13,6 @@ class LeetCodeAPI:
 
     def get_profile(self):
         """Fetch the user's profile and solved statistics."""
-
         response = self.client.post(
             PROFILE_QUERY,
             {"username": Config.LEETCODE_USERNAME},
@@ -26,7 +25,6 @@ class LeetCodeAPI:
 
     def get_recent_submissions(self, limit=15):
         """Fetch the user's recent accepted submissions."""
-
         response = self.client.post(
             RECENT_SUBMISSIONS_QUERY,
             {
@@ -38,11 +36,12 @@ class LeetCodeAPI:
         if "errors" in response:
             raise Exception(response["errors"])
 
-        return parse_submissions(response["data"]["recentAcSubmissionList"])
+        return parse_submissions(
+            response["data"]["recentAcSubmissionList"]
+        )
 
     def get_submission_detail(self, submission_id):
         """Fetch detailed information about a submission."""
-
         response = self.client.post(
             SUBMISSION_DETAILS_QUERY,
             {"submissionId": int(submission_id)},
@@ -51,7 +50,15 @@ class LeetCodeAPI:
         if "errors" in response:
             raise Exception(response["errors"])
 
+        details = response["data"].get("submissionDetails")
+
+        if details is None:
+            raise Exception(
+                f"LeetCode returned no submission details "
+                f"for submission {submission_id}"
+            )
+
         return parse_submission_detail(
             submission_id,
-            response["data"]["submissionDetails"],
+            details,
         )
