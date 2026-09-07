@@ -43,8 +43,12 @@ def test_save(tmp_path):
     assert loaded["total"] == 100
 
 
-def test_update(sample_detail):
+def test_update(tmp_path, sample_detail):
     manager = StatisticsManager()
+
+    manager.stats_file = tmp_path / "stats.json"
+
+    manager._create_default()
 
     profile = {
         "submitStatsGlobal": {

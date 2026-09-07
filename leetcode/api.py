@@ -36,9 +36,7 @@ class LeetCodeAPI:
         if "errors" in response:
             raise Exception(response["errors"])
 
-        return parse_submissions(
-            response["data"]["recentAcSubmissionList"]
-        )
+        return parse_submissions(response["data"]["recentAcSubmissionList"])
 
     def get_submission_detail(self, submission_id):
         """Fetch detailed information about a submission."""
