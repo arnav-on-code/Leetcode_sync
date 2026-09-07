@@ -17,9 +17,14 @@ def test_sync_manager_run(
     mock_detector,
     mock_downloader,
     mock_git,
+    tmp_path,
 ):
-
     manager = SyncManager()
+
+    # Use a temporary stats file so the test does not depend
+    # on the real storage/stats.json file.
+    manager.statistics.stats_file = tmp_path / "stats.json"
+    manager.statistics._create_default()
 
     submission = Submission(
         id="1",
@@ -84,7 +89,6 @@ def test_sync_manager_no_new_submissions(
     mock_downloader,
     mock_git,
 ):
-
     manager = SyncManager()
 
     manager.api.get_recent_submissions = MagicMock(return_value=[])
