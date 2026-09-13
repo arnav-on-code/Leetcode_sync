@@ -28,20 +28,23 @@ query recentAcSubmissions($username: String!, $limit: Int!) {
     }
 }
 """
-
 SUBMISSION_DETAILS_QUERY = """
-query mysubmissionDetails($id: ID!) {
-    submissionDetails(submissionId: $id) {
+query mySubmissionDetail($id: Int!) {
+    submissionDetail(submissionId: $id) {
         id
         code
         runtime
+        runtimeDisplay
         memory
-        statusDisplay
+        memoryDisplay
+        statusCode
         timestamp
+
         lang {
             name
             verboseName
         }
+
         question {
             questionId
             titleSlug
