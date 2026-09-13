@@ -30,8 +30,8 @@ query recentAcSubmissions($username: String!, $limit: Int!) {
 """
 
 SUBMISSION_DETAILS_QUERY = """
-query mySubmissionDetail($id: ID!) {
-    submissionDetail(submissionId: $id) {
+query mysubmissionDetails($id: ID!) {
+    submissionDetails(submissionId: $id) {
         id
         code
         runtime

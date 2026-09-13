@@ -1,6 +1,6 @@
 import pytest
 
-from leetcode.models import Submission, SubmissionDetail
+from leetcode.models import Submission, submissionDetails
 
 
 @pytest.fixture
@@ -24,7 +24,7 @@ def sample_submission_detail(sample_detail):
 
 @pytest.fixture
 def sample_detail():
-    return SubmissionDetail(
+    return submissionDetails(
         submission_id="2051842379",
         question_id="295",
         title_slug="find-median-from-data-stream",

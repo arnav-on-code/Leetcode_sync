@@ -15,7 +15,7 @@ class Submission:
 
 
 @dataclass(slots=True)
-class SubmissionDetail:
+class submissionDetails:
     submission_id: str
 
     question_id: str
