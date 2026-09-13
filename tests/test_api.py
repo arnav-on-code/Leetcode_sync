@@ -51,7 +51,7 @@ def test_get_submission_detail():
 
     client.post.return_value = {
         "data": {
-            "submissionDetails": {
+            "submissionDetailss": {
                 "id": "123",
                 "question": {
                     "questionId": "1",

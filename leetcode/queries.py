@@ -29,8 +29,8 @@ query recentAcSubmissions($username: String!, $limit: Int!) {
 }
 """
 SUBMISSION_DETAILS_QUERY = """
-query mySubmissionDetail($id: Int!) {
-    submissionDetail(submissionId: $id) {
+query mysubmissionDetails($id: Int!) {
+    submissionDetails(submissionId: $id) {
         id
         code
         runtime

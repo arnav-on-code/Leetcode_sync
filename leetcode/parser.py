@@ -1,4 +1,4 @@
-from leetcode.models import Submission, submissionDetails
+from leetcode.models import Submission, submissionDetailss
 
 
 def parse_submissions(data):
@@ -20,9 +20,9 @@ def parse_submissions(data):
 
 
 def parse_submission_detail(submission_id, data):
-    """Parse GraphQL response into a submissionDetails object."""
+    """Parse GraphQL response into a submissionDetailss object."""
 
-    return submissionDetails(
+    return submissionDetailss(
         submission_id=str(submission_id),
         question_id=data["question"]["questionId"],
         title_slug=data["question"]["titleSlug"],

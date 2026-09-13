@@ -48,7 +48,7 @@ class LeetCodeAPI:
         if "errors" in response:
             raise Exception(response["errors"])
 
-        details = response["data"].get("submissionDetails")
+        details = response["data"].get("submissionDetailss")
 
         if details is None:
             raise Exception(

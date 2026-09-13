@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock, patch
 
-from leetcode.models import Submission, submissionDetails
+from leetcode.models import Submission, submissionDetailss
 from sync.manager import SyncManager
 
 
@@ -33,7 +33,7 @@ def test_sync_manager_run(
         timestamp=1780000000,
     )
 
-    detail = submissionDetails(
+    detail = submissionDetailss(
         submission_id="1",
         question_id="1",
         title_slug="two-sum",
