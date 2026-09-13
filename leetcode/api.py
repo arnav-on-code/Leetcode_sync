@@ -42,19 +42,24 @@ class LeetCodeAPI:
         """Fetch detailed information about a submission."""
         response = self.client.post(
             SUBMISSION_DETAILS_QUERY,
-            {"submissionId": int(submission_id)},
+            {"id": str(submission_id)},
         )
 
         if "errors" in response:
             raise Exception(response["errors"])
 
-        details = response["data"].get("submissionDetails")
+        details = response["data"].get("submissionDetail")
 
         if details is None:
             raise Exception(
                 f"LeetCode returned no submission details "
                 f"for submission {submission_id}"
             )
+
+        return parse_submission_detail(
+            submission_id,
+            details,
+        )
 
         return parse_submission_detail(
             submission_id,

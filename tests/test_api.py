@@ -47,15 +47,16 @@ def test_get_recent_submissions():
 
 
 def test_get_submission_detail():
-
     client = MagicMock()
 
     client.post.return_value = {
         "data": {
-            "submissionDetails": {
+            "submissionDetail": {
+                "id": "123",
                 "question": {
                     "questionId": "1",
                     "titleSlug": "two-sum",
+                    "title": "Two Sum",
                 },
                 "lang": {
                     "name": "python3",
@@ -66,6 +67,7 @@ def test_get_submission_detail():
                 "memory": 17000000,
                 "memoryDisplay": "17 MB",
                 "statusCode": 10,
+                "statusDisplay": "Accepted",
                 "code": "print('hello')",
                 "timestamp": "1780000000",
             }
@@ -77,11 +79,16 @@ def test_get_submission_detail():
     detail = api.get_submission_detail("123")
 
     assert detail.submission_id == "123"
-
     assert detail.question_id == "1"
-
     assert detail.title_slug == "two-sum"
-
     assert detail.language == "python3"
-
+    assert detail.language_verbose == "Python3"
+    assert detail.runtime == 45
+    assert detail.runtime_display == "45 ms"
+    assert detail.memory == 17000000
+    assert detail.memory_display == "17 MB"
     assert detail.status_code == 10
+    assert detail.code == "print('hello')"
+    assert detail.timestamp == 1780000000
+
+    client.post.assert_called_once()
